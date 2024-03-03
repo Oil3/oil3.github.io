@@ -10,3 +10,4 @@
 | `weak var`       | A variable with a weak reference to an object. It's used to prevent strong reference cycles in closures and between class instances.     |
 | `static var`     | A variable that is shared among all instances of a class or struct. It belongs to the type itself rather than any instance.               |
 | `class var`      | Similar to `static var`, but it allows subclasses to override the variable's value.                                                      |
+| `guard `         | A control flow statement used to check for conditions and ensure that certain requirements are met before executing further code.           |
