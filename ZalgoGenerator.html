@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zalgo Text Generator</title>
+    <style>
+        #zalgoOutput {
+            font-family: monospace;
+            color: green;
+            background-color: black;
+            padding: 10px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h2>Zalgo Text Generator</h2>
+    <label for="textInput">Enter your text:</label>
+    <input type="text" id="textInput" placeholder="iCode - iCoder"><br><br>
+
+    <label for="intensitySlider">Intensity:</label>
+    <input type="range" id="intensitySlider" min="1" max="10" value="5"><br><br>
+
+    <button onclick="generateZalgo()">Generate Zalgo Text</button>
+
+    <div id="zalgoOutput"></div>
+
+    <script>
+        function generateZalgo() {
+            var text = document.getElementById("textInput").value;
+            var intensity = document.getElementById("intensitySlider").value;
+            var zalgoText = addZalgo(text, intensity);
+            document.getElementById("zalgoOutput").innerText = zalgoText;
+        }
+
+        function addZalgo(text, intensity) {
+            var zalgoChars = ["\u0300", "\u0301", "\u0302", "\u0303", "\u0304", "\u0305", "\u0306", "\u0307", "\u0308", "\u0309", "\u030A", "\u030B", "\u030C", "\u030D", "\u030E", "\u030F", "\u0310", "\u0311", "\u0312", "\u0313", "\u0314", "\u0315"];
+            var zalgoText = "";
+            for (var i = 0; i < text.length; i++) {
+                zalgoText += text[i];
+                for (var j = 0; j < intensity; j++) {
+                    zalgoText += zalgoChars[Math.floor(Math.random() * zalgoChars.length)];
+                }
+            }
+            return zalgoText;
+        }
+    </script>
+</body>
+</html>
