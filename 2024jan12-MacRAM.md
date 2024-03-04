@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+Edit: Na, not enough, I need 12GB
+![image](https://github.com/Oil3/oil3.github.io/assets/22565084/6cb358eb-9c7e-4f2a-a360-6d71a3e93957)
+
+
 So when the macbook air M2 came out, I eventually saw this offer on amazon and went "F it", and got the 8GB ram base model...
 I whine about those 8GBs a lot because I believe I need a lot of RAM:
 I run a lot of Chrome tabs.
